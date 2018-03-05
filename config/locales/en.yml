@@ -36,7 +36,7 @@ en:
   welcome_user_text_html: <p>Dreams listed here (and only those) have the possibility to apply for grants from the
     Borderland, to cover their expenses according to <a href="http://wiki.theborderland.se/Dreams#Budget_Guidelines"
     target="blank">these guidelines</a>.</p>
-    <p>For more details, please read the
+    <p>For more details, please refer to the
     <a href="https://docs.google.com/document/d/10WKMzVNLM-hH_p8sa-z7J4jbb533vdRhM7a54BCbqO4" target="blank">Dreamer's
     Manual</a>.</p>
   header_faq_link: Did you already read our FAQ page?
@@ -142,6 +142,8 @@ en:
   form_artgrants_headline: Dream Grant information
   form_artgrants_text_html: <p>Dream Grants are given by the Borderland community. Each Borderling has 10 grants to hand out, each worth %{grant_value_for_currency} %{currency}. You can give all your grants to one project or spread them around. Once a grant has been gifted to a dream, it can't be taken back.</p>
     <p>Dream Grants cover project expenses according to <a href="http://wiki.theborderland.se/Dreams#Budget_Guidelines">these guidelines</a>.</p>
+  form_artgrants_step_1_html: <p>To apply for a Borderland Dream Grant, unless your dream is simple, you need to write an <em>estimated budget</em>. This is done in a Google spreadsheet, which is patiently waiting for you in your dream's Google Drive folder.</p>
+  form_artgrants_google_drive_folder_link: Click here to access your dream's Google Drive folder
   form_minigrants_realcurrency_label: Minimum funding required (in %{currency})
   form_minigrants_realcurrency_guidetext_html: "The amount of funding below which you would cancel your dream:"
   form_maxigrants_realcurrency_label: Full estimated budget (in %{currency})
@@ -433,8 +435,8 @@ en:
   youre_out_of_grants: You're out of grants. Hats off!
   add_my_name: Add my name
   added_my_name: Your name was added
-  delete_this_creation: Delete this creation
-  archive_this_creation: Remove this creation
+  delete_this_creation: Delete this dream
+  archive_this_creation: Remove this dream
   delete_are_you_sure: Are you sure?
   are_you_sure: Are you sure?
   your_space: Your personal space

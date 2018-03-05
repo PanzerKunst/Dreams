@@ -312,6 +312,12 @@
   .combo#artgrants
   - if Rails.configuration.x.firestarter_settings["granting"]
     = t("form_artgrants_text_html", grant_value_for_currency: Grant.value_for_currency, currency: t("currency"))
+    %br
+    = t("form_artgrants_step_1_html")
+    %a{ :href => "#{@camp.google_drive_folder_path}", :target => "_blank", :id => "google-drive-folder-link"}
+      = t("form_artgrants_google_drive_folder_link")
+    %br
+    %br
 
   - if Rails.configuration.x.firestarter_settings["granting"] and !Rails.application.config.x.firestarter_settings['disable_edit_budget']
     .combo#maxbudget_realcurrency
