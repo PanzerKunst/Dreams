@@ -116,9 +116,8 @@ en:
   form_light_label: Will there be light?
   form_light_guidetext_html: Will The Thing be illuminated during the night (yes please!)?
     How?
-  form_fire_label: Will anything burn?
-  form_fire_guidetext_html: Tell us about your plans for dealing with big fire, if
-    you have such.
+  form_fire_label: Safety implications
+  form_fire_guidetext_html: What kind of safety and security implications are there to consider for your dream and what are you doing to manage it?
   form_noise_label: What is your audio footprint?
   form_noise_guidetext_html: Are you making any noise?
   form_nature_label: Warming the place
@@ -384,7 +383,7 @@ en:
   donate_text: Donate
   coins_text: Heart
   coins_left: 'Available Hearts:'
-  currency: NIS
+  currency: SEK
   how_can_i_help_title: How can I help?
   how_can_i_help_title_desc_html: In this page you will find all our dreamers current needs. Find a dream you'd like to join, and click 
   how_can_i_help_page_description: In this page you will find all our dreamers current needs. Find a dream you'd like to join, and click add my name"
