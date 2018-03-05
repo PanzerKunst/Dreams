@@ -1,5 +1,5 @@
 defaults: &defaults
-  grant_value_for_currency: 140.0
+  grant_value_for_currency: 140
   additional_info: true
   contact_phone: true
   description: true
