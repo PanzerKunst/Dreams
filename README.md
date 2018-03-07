@@ -80,6 +80,10 @@ Guide and admins can close/open granting and edit dreams
 Ticket ids are imported from a two column csv file of IDs which can be set to any url using `IMPORT_CSV_URL` env variable
 Rake task is in lib/tasks/import.rake and is run with "bundle exec rake import"
 
+## Ticket ID Import through BurnetTickets
+
+Run task `bundle exec rake import_burnertickets` and check that the "tickets" table is populated.
+
 ## Ticket verifier through TixWise
 
 We've added an optional verification through tixwise - you need to aquire an API from them and then set `TICKETS_EVENT_URL` ENV variable to a url such as:
