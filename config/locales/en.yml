@@ -109,7 +109,7 @@ en:
   form_project_management_dream_pre_construction_site_guidetext_html: Where will you build your art installation, prior to arriving at the Playa?
   form_description_label: Full description of the concept
   form_description_guidetext_html: Give a full physical and conceptual description,
-    including interactivity how it will fit into Midburn community. You've got 4096
+    including interactivity how it will fit into Borderland community. You've got 4096
     characters. Make them count.
   form_electricity_label: Do you need electricity from the grid? How much in Watts?
   form_electricity_guidetext_html: If yes, how much approximately are we talking in
@@ -136,13 +136,13 @@ en:
   form_cocreation_label: How can other burners co-create with you?
   form_cocreation_guidetext_html: How can someone be a part of this project?
   form_neighbors_label: Who would your perfect neighbors be?
-  form_neighbors_guidetext_html: What kind of midburners would you like as neighbors?
+  form_neighbors_guidetext_html: What kind of Borderlings would you like as neighbors?
     Quiet, Deep playa, Near camps, Near sounds camps, Far away from sound camps
 
   form_artgrants_headline: Dream Grant information
-  form_artgrants_text_html: <p>Dream Grants are given by the Borderland community. Each Borderling has 10 grants to hand out, each worth %{grant_value_for_currency} %{currency}. You can give all your grants to one project or spread them around. Once a grant has been gifted to a dream, it can't be taken back.</p>
+  form_artgrants_text_html: <p>Dream Grants are given by the Borderland community. Each Borderling has 10 grants to hand out, each worth %{grant_value_for_currency} %{currency}. Once a grant has been gifted to a dream, it can't be taken back.</p>
     <p>Dream Grants cover project expenses according to <a href="http://wiki.theborderland.se/Dreams#Budget_Guidelines">these guidelines</a>.</p>
-  form_artgrants_step_1_html: <p>To apply for a Borderland Dream Grant, unless your dream is simple, you need to write an <em>estimated budget</em>. This is done in a Google spreadsheet, which is patiently waiting for you in your dream's Google Drive folder.</p>
+  form_artgrants_step_1_html: <p>To apply for a Borderland Dream Grant, unless your dream is simple, you need to write an <em>estimated budget</em>. This is done in a Google spreadsheet, which is patiently waiting for you in a Google Drive folder.</p>
   form_artgrants_google_drive_folder_link: Click here to access your dream's Google Drive folder
   form_minigrants_realcurrency_label: Minimum funding required (in %{currency})
   form_minigrants_realcurrency_guidetext_html: "The amount of funding below which you would cancel your dream:"
@@ -176,7 +176,7 @@ en:
   form_spec_electricity_details_guidetext_html: What objects will require electricity
     in your art installation? Electric systems, computers, lighting, sound, triangle
     toasters etc.
-  form_dream_prop_interactivity_audience_participation_guidetext_html: At Midburn,
+  form_dream_prop_interactivity_audience_participation_guidetext_html: At Borderland,
               the artists are encouraged to break the barriers between the art work and its
               viewers. Please share with us your vision regarding the level in which one could
               interact with the installation or influence it - climbing, touching, operating,
