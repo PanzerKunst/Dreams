@@ -34,7 +34,7 @@ defaults: &defaults
   google_drive_integration: true
   show_point_of_contact: false
   show_safety_file_comments: false
-  recaptcha: true
+  recaptcha: <%= ENV['RECAPTCHA'] or false %>
   max_grants_per_user_per_dream: 7
 
 development:
