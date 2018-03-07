@@ -34,7 +34,7 @@ task :import_burnertickets => [:environment] do
         unless Ticket.exists?(email: email)
           puts "Found ticket to transfer"
           ticket = Ticket.find_by(id_code: ticket_id)
-          ticket.update(email: email);
+          ticket.update(email: email)
           ticket.update(remote_user_id: userId)
           puts "Transferred ticket" + ticket_id + " to " + email
           updatedCounter+=1
