@@ -203,31 +203,6 @@
       %blockquote
         = best_in_place_if @can_edit, @camp, :neighbors, html_attrs: {maxlength: 4096, class: "form-control"}, as: :textarea, display_with: :simple_format, place_holder: t(:form_click_to_edit_html)
 
-  %br
-  .h3
-    = form.label t("form_project_management_crew")
-    %span.label.label-success
-      =t("private")
-  
-  - if Rails.configuration.x.firestarter_settings["crew_size"]
-    .row
-      .combo.col-xs-7{ style: 'float:' + I18n.t('lang_direction')}
-        = form.label t("form_safetybag_crewsize_label")
-        %blockquote
-          = best_in_place_if @can_edit, @camp, :safetybag_crewsize, html_attrs: {maxlength: 5, class: "form-control"}, place_holder: t(:form_click_to_edit_html)
-        %br
-  
-  #responsibles
-    = form.fields_for :people do |person|
-      = render 'person_fields', :f => person, :camp_id => @camp.id
-  
-  - if @can_edit
-    .row
-      .links.col-xs-12
-        = link_to_add_association t('add_a_new_person'), form, :people, render_options: { locals: { camp_id: @camp.id } }, class: 'btn btn-success', id: 'add-new-person'
-        %br
-        %br
-
   - if Rails.configuration.x.firestarter_settings["safetybag"]
     .combo
       = t("form_extra_team_member_info")
