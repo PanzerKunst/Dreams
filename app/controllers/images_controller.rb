@@ -5,6 +5,10 @@ class ImagesController < ApplicationController
 
   def index
     @images = Image.where(camp_id: @camp_id)
+
+    # TODO
+    puts "### index > @images:" + @images.to_s
+
   end
 
   def show
@@ -12,17 +16,37 @@ class ImagesController < ApplicationController
   end
 
   def create
+
+    # TODO
+    puts "### create > params[:attachment]:" + params[:attachment].to_s
+
     if params[:attachment].blank?
       flash[:alert] = t(:error_no_image_selected)
       redirect_to camp_images_path(camp_id: @camp_id)
       return
     end
+
     @image = Image.new(image_params)
+
+    # TODO
+    puts "### create > @image:" + @image.to_s
+
     @image.user_id = current_user.id
 
+    # TODO
+    puts "### create > @image.user_id:" + @image.user_id.to_s
+
     if @image.save
+
+      # TODO
+      puts "### create > redirect_to"
+
       redirect_to camp_images_path(camp_id: @camp_id)
     else
+
+      # TODO
+      puts "### create > render"
+
       render action: 'index'
     end
   end
