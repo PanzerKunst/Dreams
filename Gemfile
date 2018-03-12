@@ -72,8 +72,6 @@ gem 'paper_trail'
 
 gem 'schema_validations'
 
-gem 'rest-client'
-
 # recaptcha to identify humans - for setup where registration is open for all
 gem 'recaptcha', require: "recaptcha/rails"
 
