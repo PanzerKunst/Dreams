@@ -415,6 +415,23 @@ body {
     text-decoration: underline;
     color: $c_pinky;
   }
+
+  h2 {
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+
+    margin: 2em 0 1em 0;
+  }
+
+  .ga-radio > span {
+    display: inline-block;
+    min-width: 10em;
+  }
+
+  .ga-explanation {
+    margin-top: 1em;
+  }
 }
 
 
@@ -430,7 +447,6 @@ body {
 .program {
   .best_in_place {
     margin: 0;
-    border-right: #ccc;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     border-bottom-right-radius: 0;

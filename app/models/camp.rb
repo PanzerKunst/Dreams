@@ -192,4 +192,8 @@ class Camp < ActiveRecord::Base
 
     return @protocol_index == nil ? "http://" + self.website : self.website
   end
+
+  def Camp.boolean_as_human_readable(bool)
+    return bool ? "Yes" : "No"
+  end
 end

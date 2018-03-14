@@ -279,6 +279,42 @@
             </div>
         <% end %>
 
+      <div class="camp-description gad">
+        <h2>Grant application details</h2>
+
+        <ul>
+          <li>
+            <label>Costumes</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_costumes) %></span>
+          </li>
+          <li>
+            <label>Consumables</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_consumables) %></span>
+          </li>
+          <li>
+            <label>Intoxicants</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_intoxicants) %></span>
+          </li>
+          <li>
+            <label>Valuable equipment</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_valuable_equipment) %></span>
+          </li>
+          <li>
+            <label>Transport</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_transport) %></span>
+          </li>
+          <li>
+            <label>Vehicle costs</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_vehicle_costs) %></span>
+          </li>
+          <li>
+            <label>Sound equipment</label>
+            <span><%= Camp.boolean_as_human_readable(@camp.ga_sound_equipment) %></span>
+          </li>
+        </ul>
+        <p class="explanation"><%= @camp.ga_explanation %></p>
+      </div>
+
     </div> <!-- col-md-8 -->
 
     <div class="col-md-4">

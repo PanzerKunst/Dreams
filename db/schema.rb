@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170830102511) do
+ActiveRecord::Schema.define(version: 20180314145048) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     :index=>{:name=>"index_active_admin_comments_on_namespace"}
@@ -151,6 +151,14 @@ ActiveRecord::Schema.define(version: 20170830102511) do
     t.string   "en_subtitle",                                              :limit=>255
     t.string   "dream_point_of_contact_email",                             :limit=>64
     t.string   "safety_file_comments",                                     :limit=>4096
+    t.boolean  "ga_costumes",                                              :default=>false
+    t.boolean  "ga_consumables",                                           :default=>false
+    t.boolean  "ga_intoxicants",                                           :default=>false
+    t.boolean  "ga_valuable_equipment",                                    :default=>false
+    t.boolean  "ga_transport",                                             :default=>false
+    t.boolean  "ga_vehicle_costs",                                         :default=>false
+    t.boolean  "ga_sound_equipment",                                       :default=>false
+    t.text     "ga_explanation",                                           :limit=>4096
   end
 
   create_table "grants", force: :cascade do |t|
