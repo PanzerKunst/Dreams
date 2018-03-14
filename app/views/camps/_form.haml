@@ -311,21 +311,27 @@
 
   .combo#artgrants
   - if Rails.configuration.x.firestarter_settings["granting"]
-    = t("form_artgrants_text_html")
-    
-  - if Rails.configuration.x.firestarter_settings["granting"] and !Rails.application.config.x.firestarter_settings['disable_edit_budget']
-    .combo#minbudget_realcurrency
-      = form.label t("form_minigrants_realcurrency_label")
-    .field-description
-      = t("form_minigrants_realcurrency_guidetext_html")
-    %blockquote
-      = best_in_place_if @can_edit, @camp, :minbudget_realcurrency, html_attrs: {maxlength: 6, class: "form-control"}, place_holder: t(:form_click_to_edit_html), display_with: :number_to_currency, :helper_options => {:unit => "", precision:0}
+    = t("form_artgrants_text_html", grant_value_for_currency: Grant.value_for_currency, currency: t("currency"))
+    %br
+    = t("form_artgrants_step_1_html")
+    %a{ :href => "#{@camp.google_drive_folder_path}", :target => "_blank", :id => "google-drive-folder-link"}
+      = t("form_artgrants_google_drive_folder_link")
+    %br
+    %br
+    %br
 
   - if Rails.configuration.x.firestarter_settings["granting"] and !Rails.application.config.x.firestarter_settings['disable_edit_budget']
     .combo#maxbudget_realcurrency
-      = form.label t("form_maxigrants_realcurrency_label")
+      = form.label t("form_maxigrants_realcurrency_label", currency: t("currency"))
     .field-description
       = t("form_maxigrants_realcurrency_guidetext_html")
     %blockquote
       = best_in_place_if @can_edit, @camp, :maxbudget_realcurrency, html_attrs: {maxlength: 6, class: "form-control"}, place_holder: t(:form_click_to_edit_html), display_with: :number_to_currency, :helper_options => {:unit => "", precision:0}
-      
+
+  - if Rails.configuration.x.firestarter_settings["granting"] and !Rails.application.config.x.firestarter_settings['disable_edit_budget']
+    .combo#minbudget_realcurrency
+      = form.label t("form_minigrants_realcurrency_label", currency: t("currency"))
+    .field-description
+      = t("form_minigrants_realcurrency_guidetext_html")
+    %blockquote
+      = best_in_place_if @can_edit, @camp, :minbudget_realcurrency, html_attrs: {maxlength: 6, class: "form-control"}, place_holder: t(:form_click_to_edit_html), display_with: :number_to_currency, :helper_options => {:unit => "", precision:0}

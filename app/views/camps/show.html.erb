@@ -342,6 +342,16 @@
             </div>
         <% end %>
 
+        <% if current_user %>
+          <br>
+          <div class="panel panel-default">
+            <div class="panel-heading"><h2 class="header-sub-heading"><%=t :form_project_management_crew %></h2></div>
+            <div class="panel-body">
+              <%= @camp.creator.email %>
+            </div>
+          </div>
+        <% end %>
+
         <div class="creation-info">
             <ul>
                 <div class="panel panel-default">
