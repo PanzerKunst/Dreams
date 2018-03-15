@@ -141,7 +141,7 @@ en:
 
   form_artgrants_headline: Dream Grant information
   form_artgrants_text_html: <p>Dream Grants are given by the Borderland community. Each Borderling has 10 grants to hand out, each worth %{grant_value_for_currency} %{currency}. Once a grant has been gifted to a dream, it can't be taken back.</p>
-    <p>Dream Grants cover project expenses according to <a href="http://wiki.theborderland.se/Dreams#Budget_Guidelines">these guidelines</a>.</p>
+    <p>Dream Grants cover project expenses according to <a href="http://wiki.theborderland.se/Dreams#Budget_Guidelines" target="_blank">these guidelines</a>.</p>
   form_artgrants_step_1_html: <p>To apply for a Borderland Dream Grant, unless your dream is simple, you need to write an <em>estimated budget</em>. This is done in a Google spreadsheet, which is patiently waiting for you in a Google Drive folder.</p>
   form_artgrants_google_drive_folder_link: Click here to access your dream's Google Drive folder
   form_minigrants_realcurrency_label: Minimum funding required (in %{currency})

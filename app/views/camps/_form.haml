@@ -45,7 +45,7 @@
   .pink-div
     = t("press_to_edit")
 
-  .header-heading
+  %h1{:class => "header-heading"}
     = t("form_basics_headline")
 
   .header-safetybag-description
@@ -306,7 +306,7 @@
   - if Rails.configuration.x.firestarter_settings["granting"]
     %br
     %br
-    .header-heading
+    %h1{:class => "header-heading"}
       = t("form_artgrants_headline")
 
   .combo#artgrants
@@ -316,11 +316,11 @@
     = t("form_artgrants_step_1_html")
     %a{ :href => "#{@camp.google_drive_folder_path}", :target => "_blank", :id => "google-drive-folder-link"}
       = t("form_artgrants_google_drive_folder_link")
-    %br
-    %br
-    %br
+    = render 'grant_application_details', form: form
 
   - if Rails.configuration.x.firestarter_settings["granting"] and !Rails.application.config.x.firestarter_settings['disable_edit_budget']
+    %h2
+      = "Desired funding"
     .combo#maxbudget_realcurrency
       = form.label t("form_maxigrants_realcurrency_label", currency: t("currency"))
     .field-description
