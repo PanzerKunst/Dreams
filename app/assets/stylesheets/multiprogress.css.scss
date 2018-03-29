@@ -1,3 +1,19 @@
+// Jquery UI overrides
+.ui-widget-header {
+  border: none;
+  background: none;
+}
+
+.ui-widget-content {
+  border: none;
+  background: none;
+}
+
+.ui-progressbar .ui-progressbar-value {
+  margin: 0;
+}
+// end of Jquery UI overrides
+
 .labels {
   display: flex;
   align-items: center;
