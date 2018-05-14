@@ -33,7 +33,7 @@ class Camp < ActiveRecord::Base
   validates_with CanCreateNewDreamValidator, :on => :create
 
   filterrific(
-    default_filter_params: { sorted_by: 'updated_at_desc' },
+    default_filter_params: { sorted_by: 'random' },
     available_filters: [
       :sorted_by,
       :search_query,
@@ -93,6 +93,8 @@ class Camp < ActiveRecord::Base
          order("camps.name #{ direction }")
       when /^updated_at_/
          order("camps.updated_at #{ direction }")
+      when /^random$/
+         order("random()")
       when /^created_at_/
          order("camps.created_at #{ direction }")
          raise(ArgumentError, "Sort option: #{ sort_option.inspect }")
