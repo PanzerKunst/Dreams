@@ -94,7 +94,7 @@ class Camp < ActiveRecord::Base
       when /^updated_at_/
          order("camps.updated_at #{ direction }")
       when /^random$/
-         order("rand()")
+         order("random()")
       when /^created_at_/
          order("camps.created_at #{ direction }")
          raise(ArgumentError, "Sort option: #{ sort_option.inspect }")
